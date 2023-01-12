@@ -1,7 +1,7 @@
-# { PROJECT NAME }
+# Remail
 
 ## Overview
-
+My intro to GTK dev, I really hate Geary and Thunderbird feels old, so I make my own. This is going to fail and die probs but wel give it a try.
 ## Info
 
 ```
