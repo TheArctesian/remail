@@ -8,11 +8,9 @@ fn build_ui(application: &Application) {
 
     window.set_title(Some("Clock Example"));
     window.set_default_size(260, 40);
-
     let time = current_time();
     let label = Label::new(None);
     label.set_text(&time);
-
     window.set_child(Some(&label));
 
     window.show();
@@ -24,7 +22,6 @@ fn build_ui(application: &Application) {
         // we could return gtk::Continue(false) to stop our clock after this tick
         glib::Continue(true)
     };
-
     // executes the closure once every second
     glib::timeout_add_seconds_local(1, tick);
 }
